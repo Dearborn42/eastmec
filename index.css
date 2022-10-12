@@ -64,3 +64,19 @@ header {
 #signup {
     border: 0px solid white;
 }
+
+.footer {
+    display: flex;
+    background-color: #16FFF3;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom {
+    text-align: center;
+    font-size: large;
+}

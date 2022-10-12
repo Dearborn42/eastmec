@@ -1,0 +1,62 @@
+#stickyImage {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    margin-left: 33%;
+    margin-top: 3px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleAndLinks {
+    color: #000000;
+    text-align: center;
+    margin-top: 1ch;
+}
+
+#mainTitle {
+    font-size: 45px;
+    font-family: Barlow-Meium;
+    top: -10px;
+}
+
+#mainTitleContainer {
+    top: -10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#headerLinksContainer {
+    position: relative;
+    border-color: black;
+    border-width: 0px;
+    border-radius: 3px;
+    border-style: dashed;
+    top: -35px;
+    height: 0px;
+    text-align: center;
+}
+
+.headerLinks {
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Barlow-Medium;
+    text-decoration: none;
+    width: 100px
+}
+
+header {
+    background-color: #16FFF3;
+    top: -1ch;
+        width: 101%;
+        z-index: 20;
+        position: sticky;
+        margin-left: -1ch;
+        margin-right: -1ch;
+        margin-top: -2ch;
+}

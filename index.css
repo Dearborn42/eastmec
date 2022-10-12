@@ -2,7 +2,7 @@
     position: absolute;
     width: 75px;
     height: 75px;
-    margin-left: 33%;
+    margin-left: 31%;
     margin-top: 3px;
 }
 
@@ -59,4 +59,8 @@ header {
         margin-left: -1ch;
         margin-right: -1ch;
         margin-top: -2ch;
+}
+
+#signup {
+    border: 0px solid white;
 }

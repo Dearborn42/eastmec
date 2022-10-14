@@ -1,5 +1,4 @@
 #stickyImage {
-    position: absolute;
     width: 40px;
     height: 40px;
     margin-left: 40%;
@@ -12,42 +11,46 @@ img {
     margin-right: auto;
 }
 
-.titleAndLinks {
-    color: #000000;
-    text-align: center;
-    margin-top: 2ch;
-}
-
-#mainTitle {
-    font-size: 45px;
-    font-family: Barlow-Meium;
-    top: -10px;
-}
 
 #mainTitleContainer {
     top: -30px;
     position: relative;
     padding-bottom: 10px;
+    font-size: 45px;
+    font-family: Barlow-Meium;
+    color: #000000;
+    text-align: center;
+    margin-top: 2ch;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
-#headerLinksContainer {
+.headerLinksContainer {
     position: relative;
     border-color: black;
     border-width: 0px;
     border-radius: 3px;
     border-style: dashed;
     top: -55px;
-    height: 0px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.headerLinks {
+.headerLinksContainer a {
     font-size: 21px;
     color: rgb(0, 0, 0);
     text-align: center;
     font-family: Barlow-Medium;
     text-decoration: none;
-    width: 100px
+    width: auto;
+    height: auto;
+}
+.search{
+    width: 100px;
+    height: auto;
 }
 
 header {

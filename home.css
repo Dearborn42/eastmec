@@ -1,0 +1,33 @@
+.desc{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.hist{
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.pop{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.main{
+   display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: auto;
+    height: auto;
+}
+p{
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+
+@media screen and (max-width: 480px){
+
+    .pop{
+      grid-column: 1/4;
+      grid-row: 3/4;
+    }
+}

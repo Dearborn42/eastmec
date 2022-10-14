@@ -1,0 +1,110 @@
+.clown{
+    grid-area: c;
+    background-color: #16FFF3;
+    border: 2px solid #2ba6ff;
+    text-align: center;
+}
+.lion{
+    grid-area: l;
+    background-color: #16FFF3;
+    border: 2px solid #2ba6ff;
+    text-align: center;
+}
+.dare{
+    grid-area: d;
+    border: 2px solid #2ba6ff;
+    background-color: #16FFF3;
+    text-align: center;
+}
+.acrobat{
+    grid-area: a;
+    background-color: #16FFF3;
+    border: 2px solid #2ba6ff;
+    text-align: center;
+}
+.trapeze{
+    grid-area: t;
+    background-color: #16FFF3;
+    border: 2px solid #2ba6ff;
+    text-align: center;
+}
+.magic{
+    grid-area: m;
+    border: 2px solid #2ba6ff;
+    background-color: #16FFF3;
+    text-align: center;
+}
+
+.classes {
+    display: grid;
+    width: auto;
+    height: auto;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "c l"
+    "d a"
+    "t m"
+}
+
+.clownTest{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 2px solid #00ff21;
+    background-color: #16FFF3;
+    text-align: center;
+}
+.lionTest{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 2px solid #00ff21;
+    background-color: #16FFF3;
+    text-align: center;
+}
+.dareTest{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 2px solid #00ff21;
+    background-color: #16FFF3;
+    text-align: center;
+}
+.acrobatTest{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid #00ff21;
+    background-color: #16FFF3;
+    text-align: center;
+}
+.trapezeTest{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 2px solid #00ff21;
+    background-color: #16FFF3;
+    text-align: center;
+}
+.magicTest{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border: 2px solid #00ff21;
+    background-color: #16FFF3;
+    text-align: center;
+}
+
+.tests {
+    display: grid;
+    width: auto;
+    height: auto;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.footer{
+    margin-top: 5px;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: left;
+}

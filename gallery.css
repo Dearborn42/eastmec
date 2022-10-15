@@ -2,51 +2,55 @@
     display: grid;
     width: auto;
     border: 0px solid black;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: auto;
     grid-template-rows: auto;
-
+    justify-content: center;
+    gap:5px;
 }
 
 .clown {
-    border: 10px solid black;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
 }
 
 .magic {
-    border: 10px solid black;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
 }
 
 .trapeze {
-    border: 10px solid black;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
 }
 
 .lion {
-    border: 10px solid black;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
 }
 
 .daredevil {
-    border: 10px solid black;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-}
-
-.acrobat {
-    border: 10px solid black;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.acrobat {  
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    width:100%;
+    height:100%;
 }
 
 #vid {
-    text-align: center;
-}
-
-.small {
-    font-size: small;
+    grid-column: 1/3;
+    grid-row: 1/2;
 }

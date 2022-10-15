@@ -51,12 +51,10 @@
 header {
     background-color: #16FFF3;
     top: -1ch;
-        width: 101%;
-        z-index: 20;
-        position: sticky;
-        margin-left: -1ch;
-        margin-right: -1ch;
-        margin-top: -2ch;
+    position: sticky;
+    margin-top: -2ch;
+    margin-left: -2ch;
+    margin-right: -1ch;
 }
 
 #signup {
@@ -66,13 +64,13 @@ header {
 .footer {
     display: block;
     background-color: #16FFF3;
-    width: 100%;
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin-bottom: -2ch;
+    margin-left: -2ch;
+    margin-right: -1ch;
 }
 
 .bottom {

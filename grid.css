@@ -119,6 +119,10 @@ body{
     "png19 png20 png20 . sig";
 }
 
+#vid {
+    text-align: center;
+}
+
 img{
     width: 95%;
     height: 95%;

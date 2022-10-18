@@ -14,5 +14,8 @@ function filterFunction() {
         } else {
             a[i].style.display = "none";
         }
+        if (filter == 0){
+            a[i].style.display = "none";
+        }
     }
 }

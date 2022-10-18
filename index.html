@@ -26,18 +26,45 @@
                 </span>
             </div>
         </h1>
-        <div class="headerLinksContainer">
+        <div class="headerLinksContainer" id="tabs">
             <a class="home" href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="gallery" href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="service" href="service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="form" href="form.html">Form</a> &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="search" placeholder="&#128270;Search..">
+            <div class="dropdown">
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#description" hidden>Description</a>
+                    <a href="#history" hidden>History</a>
+                    <a href="#popular" hidden>Popular information</a>
+                </div>
+            </div>
+            
+            <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function filterFunction() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    div = document.getElementById("myDropdown");
+                    a = div.getElementsByTagName("a");
+                    for (i = 0; i < a.length; i++) {
+                        txtValue = a[i].textContent || a[i].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            a[i].style.display = "block"
+                        } else {
+                            a[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
         </div>
     </header>
     
     <div class="main">
         <div class="desc">
-            <h2 class="title">Description</h2>
+            <h2 class="title" id="description">Description</h2>
             <p>Our school is one of the best and most esteemed schools in Arizona! While we are somewhat limited on what we
                 offer
                 from the people that have taken our classes we have accumulated an amazing 1/5 stars! We offer classes mostly
@@ -53,7 +80,7 @@
         
         <br>
         <div class="hist">
-            <h2 class="title">History</h2>
+            <h2 class="title" id="history">History</h2>
             <p>East-Mec was founded in Arizona in 1914 at the start of WWI so that people could have entertainment while
                 everyone
                 else was at war. It didn't go well and most of the people were made fun of for being cowards that wouldn't fight
@@ -64,7 +91,7 @@
         
         <br>
         <div class="pop">
-            <h3 class="title">Popular information</h3>
+            <h3 class="title" id="popular">Popular information</h3>
             <ul>
                 <li>
                     <h4><strong>Kid in Magician Class was bitten by a goose that came out of his hat!</strong></h4>

@@ -19,6 +19,8 @@
 }
 p{
     text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .title{
     text-align: center;
@@ -38,4 +40,12 @@ p{
       grid-column: 1/4;
       grid-row: 3/4;
     }
+}
+
+#school {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 2%;
 }

@@ -16,6 +16,8 @@
     <meta Property="og:title" content="Title of website">
 </head>
 <body>
+
+    <!-- Page Navbar -->
     <header class="head">
         <br>
         <h1>
@@ -26,42 +28,19 @@
                 </span>
             </div>
         </h1>
-        <div class="headerLinksContainer" id="tabs">
+        <div class="headerLinksContainer">
             <a class="home" href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="gallery" href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="service" href="service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
             <a class="form" href="form.html">Form</a> &nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="dropdown">
-                <div id="myDropdown" class="dropdown-content">
-                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                    <a href="#description" hidden>Description</a>
-                    <a href="#history" hidden>History</a>
-                    <a href="#popular" hidden>Popular information</a>
-                </div>
-            </div>
-            
-            <script>
-                /* When the user clicks on the button,
-                toggle between hiding and showing the dropdown content */
-                function filterFunction() {
-                    var input, filter, ul, li, a, i;
-                    input = document.getElementById("myInput");
-                    filter = input.value.toUpperCase();
-                    div = document.getElementById("myDropdown");
-                    a = div.getElementsByTagName("a");
-                    for (i = 0; i < a.length; i++) {
-                        txtValue = a[i].textContent || a[i].innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            a[i].style.display = "block"
-                        } else {
-                            a[i].style.display = "none";
-                        }
-                    }
-                }
-            </script>
+            <input type="search" placeholder="&#128270;Search..">
         </div>
     </header>
+
+    <!-- School Picture -->
+    <img id="school" src="schoolClown.png">
     
+    <!-- Description of school -->
     <div class="main">
         <div class="desc">
             <h2 class="title" id="description">Description</h2>
@@ -79,6 +58,8 @@
         </div>
         
         <br>
+
+        <!-- History of the school -->
         <div class="hist">
             <h2 class="title" id="history">History</h2>
             <p>East-Mec was founded in Arizona in 1914 at the start of WWI so that people could have entertainment while
@@ -90,8 +71,10 @@
         </div>
         
         <br>
-        <div class="pop">
-            <h3 class="title" id="popular">Popular information</h3>
+
+        <!-- Popular info for the school -->
+        <div class="pop" id="popular info">
+            <h3 class="title">Popular information</h3>
             <ul>
                 <li>
                     <h4><strong>Kid in Magician Class was bitten by a goose that came out of his hat!</strong></h4>
@@ -116,7 +99,7 @@
         </div>
     </div>
     
-
+    <!-- Page footer -->
     <div class="footer">
         <p>Contatct us at any of the following:     607-590-4040     staff@east-mec.org   @east-mec</p>
         <p>Contact us at time from January to Decemember during weekdays and from 7:00am to 6:00pm</p>

@@ -39,26 +39,6 @@
                     <a href="#popular" hidden>Popular information</a>
                 </div>
             </div>
-            
-            <script>
-                /* When the user clicks on the button,
-                toggle between hiding and showing the dropdown content */
-                function filterFunction() {
-                    var input, filter, ul, li, a, i;
-                    input = document.getElementById("myInput");
-                    filter = input.value.toUpperCase();
-                    div = document.getElementById("myDropdown");
-                    a = div.getElementsByTagName("a");
-                    for (i = 0; i < a.length; i++) {
-                        txtValue = a[i].textContent || a[i].innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            a[i].style.display = "block"
-                        } else {
-                            a[i].style.display = "none";
-                        }
-                    }
-                }
-            </script>
         </div>
     </header>
     
@@ -123,5 +103,6 @@
         <p>Credits: Circuses GLobally    Andrew Murphy    Ren Levingar    Mr.Bernard     The US Clown Trade School</p>
         <div class="bottom">&#169; 2022 East-Mec</div>
     </div>
+    <script src="scrollbar.js"></script>
 </body>
 </html>

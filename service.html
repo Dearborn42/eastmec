@@ -34,37 +34,24 @@
         <div class="dropdown">
             <div id="myDropdown" class="dropdown-content">
                 <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                <a href="#description" hidden>Description</a>
-                <a href="#history" hidden>History</a>
-                <a href="#popular" hidden>Popular information</a>
+                <a href="#classes" hidden>Classes</a>
+                <a href="#clown" hidden>Clown class description</a>
+                <a href="#lion" hidden>Lion class description</a>
+                <a href="#daredevil" hidden>Daredevil class description</a>
+                <a href="#acrobat" hidden>Acrobat class description</a>
+                <a href="#testimonials" hidden>Testimonials</a>
+                <a href="#clownTestimonial" hidden>Clown class testimonial</a>
+                <a href="#lionTest" hidden>Lion class testimonial</a>
+                <a href="#daredevilTest" hidden>Daredevil class testimonial</a>
+                <a href="#acrobatTest" hidden>Acrobat class testimonial</a>
             </div>
         </div>
-        
-        <script>
-            /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-            function filterFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                div = document.getElementById("myDropdown");
-                a = div.getElementsByTagName("a");
-                for (i = 0; i < a.length; i++) {
-                    txtValue = a[i].textContent || a[i].innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        a[i].style.display = "block"
-                    } else {
-                        a[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
     </div>
 </header>
     <h1>Services</h1>
     <h2>Classes</h2>
-    <div class="classes">
-        <div class="clown"><strong>Clown class</strong>
+    <div class="classes" id="classes">
+        <div class="clown" id="clown"><strong>Clown class</strong>
             <p>
                 Take our class that teahces you everything there is to know about being a clown. This class last 8 months, starting
                 in the early spring and ending in late winter. Classes last 5 hours starting at 11am and ending at 4pm. The starting
@@ -72,7 +59,7 @@
             </p>
         </div>
 
-        <div class="lion"><strong>Lion tamer</strong>
+        <div class="lion" id="lion"><strong>Lion tamer</strong>
             <p>
                 Take our class that teahces you everything there is to know about taming lions. This class last 8 months, starting
                 in the early spring and ending in late winter. Classes last 5 hours starting at 11am and ending at 4pm. The starting
@@ -80,7 +67,7 @@
             </p>
         </div>
 
-        <div class="dare"><strong>Daredevil class</strong>
+        <div class="dare" id="daredevil"><strong>Daredevil class</strong>
             <p>
                 Take our class that teahces you everything there is to know about preforming daredevil stunts. This class last 8
                 months, starting in the early spring and ending in late winter. Classes last 5 hours starting at 11am and ending at
@@ -88,7 +75,7 @@
             </p>
         </div>
 
-        <div class="acrobat"><strong>Acrobat class</strong>
+        <div class="acrobat" id="acrobat"><strong>Acrobat class</strong>
             <p>
                 Take our class that teahces you everything there is to know about preforming acrobatic stunts. This class last 8
                 months, starting in the early spring and ending in late winter. Classes last 5 hours starting at 11am and ending at
@@ -96,7 +83,7 @@
             </p>
         </div>
 
-        <div class="trapeze"><strong>Trapeze artist</strong>
+        <div class="trapeze" id="trapeze"><strong>Trapeze artist</strong>
             <p>
                 Take our class that teahces you everything there is to know about trapeze acts. This class last 8 months, starting
                 in the early spring and ending in late winter. Classes last 5 hours starting at 11am and ending at 4pm. The starting
@@ -104,7 +91,7 @@
             </p>
         </div>
 
-        <div class="magic"><strong>Magician</strong>
+        <div class="magic" id="magic"><strong>Magician</strong>
             <p>
                 Take our class that teahces you everything there is to know about preforming magical acts. This class last 8 months,
                 starting inthe early spring and ending in late winter. Classes last 5 hours starting at 11am and ending at 4pm. The
@@ -114,8 +101,8 @@
     </div>
     <br>
     <h2>Testimonials</h2>
-    <div class="tests">
-        <div class="clownTest"><strong>Clown class testimonial</strong>
+    <div class="tests" id="testimonials">
+        <div class="clownTest" id="clownTestimonial"><strong>Clown class testimonial</strong>
             <p>
                 This class sucks and you should never take it! The class made it impossible to hold a job. There are no breaks and I
                 couldn't handle all the homework. The teacher was purposly rude to everyone. The teacher also has never held down a
@@ -124,7 +111,7 @@
             </p>
         </div>
 
-        <div class="lionTest"><strong>Lion tamer testimonial</strong>
+        <div class="lionTest" id="lionTest"><strong>Lion tamer testimonial</strong>
             <p>
                 This class was not good. The class doesn't have any actual training. We just learned about lions and tigers(not part
                 of the class). We didn't learn how to train the aniamls, no technique, nothing. The one time we were actually
@@ -133,7 +120,7 @@
             </p>
         </div>
 
-        <div class="dareTest"><strong>Daredevil class testimonial</strong>
+        <div class="dareTest" id="daredevilTest"><strong>Daredevil class testimonial</strong>
             <p>
                 This class was suopernaturally horrid! This class was a joke. All of the stunts were done on a 2ft ramp. We didn't
                 even use motorcycles or cars, we used bikes with training wheels and segways. One time when we were training, our
@@ -143,7 +130,7 @@
             </p>
         </div>
 
-        <div class="acrobatTest"><strong>Acrobat class testimonial</strong>
+        <div class="acrobatTest" id="acrobatTest"><strong>Acrobat class testimonial</strong>
             <p>
                 This class was subpar and unpleasant! We never used a safety net when we parcticed, I don't have enough fingers to
                 count how many injuries occured, mainly because I lost one of my hands when I fell into a lion cage while swinging.
@@ -153,7 +140,7 @@
             </p>
         </div>
 
-        <div class="trapezeTest"><strong>Trapeze class</strong>
+        <div class="trapezeTest" id="trapezeTest"><strong>Trapeze class</strong>
             <p>
                 This class was unacceptable. The cables attached to the hoops and bars always snapped. The instructor never fixed
                 this problem because he never paid attention during pratice. A woman named Julie broke her collar bone because she
@@ -162,7 +149,7 @@
             </p>
         </div>
 
-        <div class="magicTest"><strong>Magic class</strong>
+        <div class="magicTest" id="magicTest"><strong>Magic class</strong>
             <p>
                 This class was complete chaos. We weren't taught any tricks because the instructor said that a good magician doesn't
                 reveal his tricks. Whenever we presented to him, and we impressed him, he would force us to tell him how to do the
@@ -178,5 +165,6 @@
         <p>Credits: Circuses GLobally Andrew Murphy Ren Levingar Mr.Bernard The US Clown Trade School</p>
         <div class="bottom">&#169; 2022 East-Mec</div>
     </div>
+    <script src="scrollbar.js"></script>
 </body>
 </html>

@@ -43,26 +43,6 @@
                 <a href="#lion" hidden>Lion</a>
             </div>
         </div>
-        
-        <script>
-            /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-            function filterFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                div = document.getElementById("myDropdown");
-                a = div.getElementsByTagName("a");
-                for (i = 0; i < a.length; i++) {
-                    txtValue = a[i].textContent || a[i].innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        a[i].style.display = "block"
-                    } else {
-                        a[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
     </div>
 </header>
 
@@ -84,6 +64,6 @@
         <p class="small">Image Credits: The Guardian   Flickr   Entertainers Worldwide   Scarlett Entertainment   James Clear   iStock     Video: Circus Xtreme</p>
         <div class="bottom">&#169; 2022 East-Mec</div>
     </div>
-    
+    <script src="scrollbar.js"></script>
 </body>
 </html>

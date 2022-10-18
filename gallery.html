@@ -32,19 +32,49 @@
         <a class="gallery" href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;
         <a class="service" href="service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
         <a class="form" href="form.html">Form</a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <input class="search" type="text" placeholder="&#128270; Search">
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="#clown" hidden>Clown</a>
+                <a href="#magic" hidden>Magician</a>
+                <a href="#trapeze" hidden>Trapeze artist</a>
+                <a href="#daredevil" hidden>Daredevil</a>
+                <a href="#acrobat" hidden>Acrobat</a>
+                <a href="#lion" hidden>Lion</a>
+            </div>
+        </div>
+        
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "block"
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
     </div>
 </header>
 
 
     <div class="galleryGrid">
             <iframe id="vid" src="https://www.youtube.com/embed/maLDbqkDxBA" width="100%" height="100%"></iframe>
-        <img class="clown" src="clown.png">
-        <img class="magic" src="magic2.png">
-        <img class="trapeze" src="trapeze.png">
-        <img class="daredevil" src="daredevil.png">
-        <img class="acrobat" src="acrobat.png">
-        <img class="lion" src="lion.png">
+        <img id="clown" class="clown" src="clown.png">
+        <img id="magic" class="magic" src="magic2.png">
+        <img id="trapeze" class="trapeze" src="trapeze.png">
+        <img id="daredevil" class="daredevil" src="daredevil.png">
+        <img id="acrobat" class="acrobat" src="acrobat.png">
+        <img id="lion" class="lion" src="lion.png">
     </div>
 
     <div class="footer">

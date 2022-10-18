@@ -9,11 +9,11 @@
     <meta name="description" content="description">
     <title>East-Mec-Forms</title>
     <link rel="icon" type="image/x-icon" href="eastlogo.png">
-    <link rel="stylesheet" href="Exmaple css">
     <meta Property="og:image" content="Link or image">
     <meta Property="og:image" content="Image of website">
     <meta Property="og:title" content="Title of website">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
 <header class="head">
@@ -31,37 +31,88 @@
         <a class="gallery" href="gallery.html">Gallery</a> &nbsp;&nbsp;&nbsp;&nbsp;
         <a class="service" href="service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
         <a class="form" href="form.html">Form</a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <input class="search" type="text" placeholder="&#128270; Search">
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="#description" hidden>Description</a>
+                <a href="#history" hidden>History</a>
+                <a href="#popular" hidden>Popular information</a>
+            </div>
+        </div>
+        
+        <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "block"
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
     </div>
 </header>
-    
-    <p>Would you like to sign up for our school? Please enter the information below:</p>
-    <fieldset id="signup">
-        <legend>Sign Up</legend><br>
-        <label>Email:</label><input type="text" name="account"><br><br>
-        <label>Name/Username:</label><input type="text" name="account"><br><br>
-        <label id="passReqs" name="account"><em>*Your password must be at least 8 character long, have one upercase letter, lowercase letter, a number, and a special symbol.</em></label><br>
-        <label>Create a password:</label><input type="password" name="account"><br>
-        <label>Verify your password:</label><input type="password" name="account"><br><br>
-        <p>Enter your desired class:</p>
-        <input type="radio" name="class"><label>Clown</label><br>
-        <input type="radio" name="class"><label>Lion Tamer</label><br>
-        <input type="radio" name="class"><label>Daredevil</label><br>
-        <input type="radio" name="class"><label>Magician</label><br>
-        <input type="radio" name="class"><label>Trapeze</label><br>
-        <input type="radio" name="class"><label>Acrobat</label><br><br>
-        <label>Would you like to recive update notifcations?</label><br>
-        <input type="radio" name="notifications" name="account"><label>YES</label><br>
-        <input type="radio" name="notifications" name="account"><label>NO</label><br>
-        <p>Check any boxes for allergy information:</p>
-        <input type="checkbox"><label>Nuts</label><br>
-        <input type="checkbox"><label>Eggs</label><br>
-        <input type="checkbox"><label>Dairy</label><br>
-        <input type="checkbox"><label>Lions</label><br><br>
-        <p>Put any other comments or notes:</p>
-        <textarea columns="20" rows="6" placeholder="Enter Here"></textarea><br>
-        <a href="index.html"><button type="submit">Submit</button></a>
-    </fieldset>
+    <form action="">
+        <p>Would you like to sign up for our school? Please enter the information below:</p>
+        <fieldset id="signup">
+            <legend>Sign Up</legend>
+            <br>
+            <label>Email:</label><input type="email" name="account" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/><required>
+            <br>
+            <br>
+            <label>Name/Username:</label><input type="text" name="account" required>
+            <br>
+            <br>
+            <label id="passReqs" name="account"><em>*Your password must be at least 8 character long, have one upercase letter, lowercase letter, a number, and a special symbol.</em></label>
+            <br>
+            <label>Create a password:</label><input type="password" name="account" id="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <br>
+            <label>Verify your password:</label><input type="password" name="account" minlength="8" required><br><br>
+
+            <p>Enter your desired class:</p>
+            <input type="radio" name="class" required><label>Clown</label>
+            <br>
+            <input type="radio" name="class" required><label>Lion Tamer</label>
+            <br>
+            <input type="radio" name="class" required><label>Daredevil</label>
+            <br>
+            <input type="radio" name="class" required><label>Magician</label>
+            <br>
+            <input type="radio" name="class" required><label>Trapeze</label>
+            <br>
+            <input type="radio" name="class" required><label>Acrobat</label>
+            <br>
+            <br>
+            <label>Would you like to recive update notifcations?</label>
+            <br>
+            <input type="radio" name="notifications" name="account"><label>YES</label>
+            <br>
+            <input type="radio" name="notifications" name="account"><label>NO</label>
+            <br>
+            <p>Check any boxes for allergy information:</p>
+            <input type="checkbox"><label>Nuts</label>
+            <br>
+            <input type="checkbox"><label>Eggs</label>
+            <br>
+            <input type="checkbox"><label>Dairy</label>
+            <br>
+            <input type="checkbox"><label>Lions</label>
+            <br>
+            <br>
+            <p>Put any other comments or notes:</p>
+            <textarea columns="20" rows="6" placeholder="Enter Here"></textarea><br>
+            <a href="index.html"><button type="submit">Submit</button></a>
+        </fieldset>
+    </form>
 
     <div class="footer">
         <p>Contatct us at any of the following: 607-590-4040 staff@east-mec.org @east-mec</p>

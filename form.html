@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
+<!-- header -->
 <header class="head">
     <br>
     <h1>
@@ -39,23 +40,32 @@
         </div>
     </div>
 </header>
-    <form action="">
+
+<!-- school signup -->
+    <form>
         <p>Would you like to sign up for our school? Please enter the information below:</p>
         <fieldset id="signup">
             <legend>Sign Up</legend>
             <br>
+
+            <!-- email -->
             <label>Email:</label><input type="email" name="account" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/><required>
             <br>
             <br>
+
+            <!-- name or username -->
             <label>Name/Username:</label><input type="text" name="account" required>
             <br>
             <br>
+
+            <!-- password -->
             <label id="passReqs" name="account"><em>*Your password must be at least 8 character long, have one upercase letter, lowercase letter, a number, and a special symbol.</em></label>
             <br>
             <label>Create a password:</label><input type="password" name="account" id="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
             <br>
             <label>Verify your password:</label><input type="password" name="account" minlength="8" required><br><br>
 
+            <!-- desired class -->
             <p>Enter your desired class:</p>
             <input type="radio" name="class" required><label>Clown</label>
             <br>
@@ -70,12 +80,16 @@
             <input type="radio" name="class" required><label>Acrobat</label>
             <br>
             <br>
+
+            <!-- notifications -->
             <label>Would you like to recive update notifcations?</label>
             <br>
             <input type="radio" name="notifications" name="account"><label>YES</label>
             <br>
             <input type="radio" name="notifications" name="account"><label>NO</label>
             <br>
+
+            <!-- allergies -->
             <p>Check any boxes for allergy information:</p>
             <input type="checkbox"><label>Nuts</label>
             <br>
@@ -86,12 +100,15 @@
             <input type="checkbox"><label>Lions</label>
             <br>
             <br>
+
+            <!-- other comments -->
             <p>Put any other comments or notes:</p>
             <textarea columns="20" rows="6" placeholder="Enter Here" id="extra"></textarea><br>
             <a href="index.html"><button type="submit">Submit</button></a>
         </fieldset>
     </form>
 
+    <!-- footer -->
     <div class="footer">
         <p>Contatct us at any of the following: 607-590-4040 staff@east-mec.org @east-mec</p>
         <p>Contact us at time from January to Decemember during weekdays and from 7:00am to 6:00pm</p>

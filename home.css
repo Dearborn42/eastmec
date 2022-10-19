@@ -1,15 +1,22 @@
+/* placing descrption */
 .desc{
     grid-column: 1/4;
     grid-row: 1/2;
 }
+
+/* placing history */
 .hist{
     grid-column: 1/4;
     grid-row: 2/3;
 }
+
+/* placing popular info */
 .pop{
     grid-column: 2/3;
     grid-row: 3/4;
 }
+
+/* makes the home page grid */
 .main{
    display: grid;
     grid-template-columns: auto;
@@ -17,23 +24,19 @@
     width: auto;
     height: auto;
 }
+
 p{
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
 }
+
+/* page title */
 .title{
     text-align: center;
 }
 
-.popular {
-    display: flex;
-    margin:auto;
-    justify-content: center;
-    width: 400px;
-    height: 200px
-}
-
+/* media for smaller screens */
 @media screen and (max-width: 480px){
 
     .pop{
@@ -42,6 +45,7 @@ p{
     }
 }
 
+/* school image */
 #school {
     display: block;
     margin-left: auto;

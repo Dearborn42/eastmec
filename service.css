@@ -1,33 +1,44 @@
+/* clown grid */
 .clown{
     grid-area: c;
     background-color: #16FFF3;
     border: 2px solid #2ba6ff;
     text-align: center;
 }
+
+/* lion tamer grid */
 .lion{
     grid-area: l;
     background-color: #16FFF3;
     border: 2px solid #2ba6ff;
     text-align: center;
 }
+
+/* daredevil grid */
 .dare{
     grid-area: d;
     border: 2px solid #2ba6ff;
     background-color: #16FFF3;
     text-align: center;
 }
+
+/* acrobat grid */
 .acrobat{
     grid-area: a;
     background-color: #16FFF3;
     border: 2px solid #2ba6ff;
     text-align: center;
 }
+
+/* trapeze grid */
 .trapeze{
     grid-area: t;
     background-color: #16FFF3;
     border: 2px solid #2ba6ff;
     text-align: center;
 }
+
+/* magician grid */
 .magic{
     grid-area: m;
     border: 2px solid #2ba6ff;
@@ -35,6 +46,7 @@
     text-align: center;
 }
 
+/* grid for all the classes */
 .classes {
     display: grid;
     width: auto;
@@ -48,6 +60,7 @@
     "t m"
 }
 
+/* clown testimonial */
 .clownTest{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -55,6 +68,8 @@
     background-color: #16FFF3;
     text-align: center;
 }
+
+/* lion testimonial */
 .lionTest{
     grid-column: 2/3;
     grid-row: 1/2;
@@ -62,6 +77,8 @@
     background-color: #16FFF3;
     text-align: center;
 }
+
+/* daredevil testimonial */
 .dareTest{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -69,6 +86,8 @@
     background-color: #16FFF3;
     text-align: center;
 }
+
+/* acrobat testimonial */
 .acrobatTest{
     grid-column: 2/3;
     grid-row: 2/3;
@@ -76,6 +95,8 @@
     background-color: #16FFF3;
     text-align: center;
 }
+
+/* trapeze testimonial */
 .trapezeTest{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -83,6 +104,8 @@
     background-color: #16FFF3;
     text-align: center;
 }
+
+/* magician testimonial */
 .magicTest{
     grid-column: 2/3;
     grid-row: 3/4;
@@ -91,6 +114,7 @@
     text-align: center;
 }
 
+/* testimonial grid */
 .tests {
     display: grid;
     width: auto;

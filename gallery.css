@@ -1,7 +1,10 @@
+/* places the video */
 #vid {
     grid-column: 1/4;
     grid-row: 1/3;
 }
+
+/* makes the grid for the images */
 .galleryGrid {
     display: grid;
     width: auto;
@@ -54,11 +57,7 @@
     height:100%;
 }
 
-#vid {
-    grid-column: 1/4;
-    grid-row: 1/3;
-}
-
+/* makes smaller text for credits in the footer */
 .small {
     font-size: smaller;
 }
